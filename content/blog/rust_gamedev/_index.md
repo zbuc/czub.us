@@ -11,18 +11,18 @@ sort_by = "none"
 weight = 0
 
 # Template to use to render this section page
-template = "section.html"
+template = "index.html"
 
 # Apply the given template to ALL pages below the section, recursively.
 # If you have several nested sections each with a page_template set, the page
 # will always use the closest to itself.
 # However, a page own `template` variable will always have priority.
 # Not set by default
-#page_template =
+#page_template = 
 
 # How many pages to be displayed per paginated page.
 # No pagination will happen if this isn't set or if the value is 0
-paginate_by = 0
+paginate_by = 5
 
 # If set, will be the path used by paginated page and the page number will be appended after it.
 # For example the default would be page/1
@@ -52,7 +52,4 @@ render = true
 # Useful when the section shouldn't split up the parent section, like
 # sections for each year under a posts section.
 transparent = false
-
-# Your own data
-[extra]
 +++

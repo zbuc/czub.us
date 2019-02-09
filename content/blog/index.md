@@ -13,4 +13,7 @@ author = "Chris Czub"
 #    {label="Other about atomics", url="/relative_sample/other-hello-world"}
 #]
 +++
-rust gamedev project
+<ul>
+    <li><a href="/blog/rust_gamedev">rust gamedev project</a></li>
+    <li><a href="/blog/woodbridge">house renovation project</a></li>
+</ul>
