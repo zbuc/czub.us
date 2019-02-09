@@ -1,63 +1,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:1111/about/</loc>
+            <loc>https://czub.us/about/</loc>
             
                 <lastmod>2018-05-30</lastmod>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/blog/</loc>
+            <loc>https://czub.us/blog/</loc>
             
                 <lastmod>2018-05-30</lastmod>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/blog/rust_gamedev/000-preamble/</loc>
+            <loc>https://czub.us/blog/rust_gamedev/000-preamble/</loc>
             
         </url>
     
     
         <url>
-            <loc>http://127.0.0.1:1111/</loc>
+            <loc>https://czub.us/</loc>
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/blog/</loc>
+            <loc>https://czub.us/blog/</loc>
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/blog/rust_gamedev/</loc>
+            <loc>https://czub.us/blog/rust_gamedev/</loc>
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/blog/woodbridge/</loc>
+            <loc>https://czub.us/blog/woodbridge/</loc>
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/page/1/</loc>
+            <loc>https://czub.us/page/1/</loc>
         </url>
     
-    
-        
-        <url>
-            <loc>http://127.0.0.1:1111/tags/</loc>
-        </url>
-        
-        <url>
-            <loc>http://127.0.0.1:1111/tags/about/</loc>
-        </url>
-        
     
         
         <url>
-            <loc>http://127.0.0.1:1111/categories/</loc>
+            <loc>https://czub.us/tags/</loc>
         </url>
         
         <url>
-            <loc>http://127.0.0.1:1111/categories/about/</loc>
+            <loc>https://czub.us/tags/about/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://czub.us/categories/</loc>
+        </url>
+        
+        <url>
+            <loc>https://czub.us/categories/about/</loc>
         </url>
         
     
