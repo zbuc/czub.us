@@ -60,3 +60,11 @@ Now, it's been nearly a decade since I completed college, and I haven't done muc
 And then came Rust. It reminded me a lot of the C++ I spent a lot of time messing with as a kid, but safer and more ergonomic for developers. It looked _so cool_, but I had very little reason to learn it other than curiosity.
 
 Which, really, is as good enough a reason as any, so I decided that writing a game was the perfect opportunity to learn Rust at the same time.
+
+## How This Blog Will Work
+
+I'll post updates as I have them. Maybe about once a week on average. I'll try to document my development process, my ups, my downs, my struggles, my internal debates, so that you can all see what my working process is like and maybe follow along. All the content for the game will [be available on GitHub](https://github.com/zbuc/rust_tower_defense) so you can follow along and build the project yourself.
+
+I'm also open to feedback on any design decisions I take; I am not a game developer, and am largely figuring this out by trial-and-error and as much research as I can stomach while still making enough progress to keep my attention.
+
+Anyways, let's have some fun.

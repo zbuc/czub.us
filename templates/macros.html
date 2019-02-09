@@ -28,3 +28,19 @@
      itemscope itemtype="http://schema.org/Organization">
     </div>
 {% endmacro %}
+
+{% macro post_nav(ref, extra) %}
+    <nav class="page-navigator">
+        {% if ref.previous %}
+            <a href="{{ ref.previous }}">&laquo; {{ extra.label_previous }}</a>
+        {% else %}
+            <span>&laquo; {{ extra.label_previous }}</span>
+        {% endif %}
+            <span class="pages"> {{ extra.label_page }} {{ ref.current_index }} {{extra.label_of}} {
+        {% if ref.next %}
+            <a href="{{ ref.next }}">{{ extra.label_next }} &raquo;</a>
+        {% else %}
+            <span>{{ extra.label_next }} &raquo;</span>
+        {% endif %}
+    </nav>
+{% endmacro %}

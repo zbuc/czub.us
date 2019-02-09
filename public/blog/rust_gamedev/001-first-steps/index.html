@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Blog">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title> First Steps </title>
+
+    
+        <link rel="apple-touch-icon" sizes="57x57" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https:&#x2F;&#x2F;czub.us&#x2F;apple-icon-180x180.png">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https:&#x2F;&#x2F;czub.us&#x2F;android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https:&#x2F;&#x2F;czub.us&#x2F;favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https:&#x2F;&#x2F;czub.us&#x2F;favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https:&#x2F;&#x2F;czub.us&#x2F;favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" itemprop="about" content="">
+        <meta name="keywords" itemprop="keywords" content="">
+        <meta itemprop="headline" content=""/>
+
+        
+            <meta itemprop="educationalUse" content="knowledge share" />
+        
+
+        
+            <meta itemprop="copyrightYear" content="2019" />
+        
+
+        <!--  Social Media -->
+        <meta property="og:title" content=" First Steps ">
+        <meta property="og:description" content=" The first steps towards making a game and learning Rust: design and background ">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https:&#x2F;&#x2F;czub.us&#x2F;blog&#x2F;rust_gamedev&#x2F;001-first-steps&#x2F;">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:site_name" content="">
+        <meta name="twitter:image:alt" content="First Steps">
+
+
+        
+            <meta property="fb:app_id" content="???" />
+        
+
+        
+            <meta name="twitter:site" content="@???">
+        
+    
+
+    
+
+    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Code+Pro">
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;czub.us&#x2F;site.css">
+    
+</head>
+<body>
+    
+    <div 
+     itemscope itemtype="http://schema.org/Organization">
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a class="title" href="https:&#x2F;&#x2F;czub.us">
+                
+                    
+                        <img src="https:&#x2F;&#x2F;czub.us&#x2F;imgs&#x2F;common&#x2F;logo.png" alt="">
+                    
+                    
+                        <h1 >czub.us</h1>
+                    
+                
+            </a>
+        </div>
+    </header>
+    <div class="container padding-header">
+        
+<article itemscope itemtype="http://schema.org/BlogPosting" class="post post-page">
+    
+        
+    
+    <header>
+        
+        <h1 class="title" itemprop="headline">First Steps</h1>
+        <address itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Chris Czub</span>
+        </address>
+        <div class="extra">
+            
+
+            
+        </div>
+    </header>
+    <div itemprop="articleBody" class="body">
+      <h1 id="first-steps">First Steps</h1>
+<p>The first thing I should probably do is identify what kind of game to make.</p>
+<p>My thought is that a <strong>Tower Defense</strong>-style game should be relatively easy to develop and fun to play. Once the very basic mechanics are down, it provides a good basis for expansion as well: there are a lot of interesting mechanics that can be added to a Tower Defense-style game to differentiate it.</p>
+<h2 id="tower-defense">Tower Defense?</h2>
+<p>Tower Defense is a genre of game I'm first aware of appearing around the time of Starcraft 1, in the late 90s. I remember it being one of the most popular &quot;<a href="https://starcraft.fandom.com/wiki/UMS">Use Map Settings</a>&quot;-style custom maps for the game, where they had a pretty cool map editor with scripting capabilities that allowed developers to extend the game beyond being just an RTS.</p>
+<p><img src="/images/starcraft_tower_defense.jpg" alt="Starcraft Tower Defense" /></p>
+<div class="subtitle">This is what a typical Tower Defense map in Starcraft 1 looked like -- not pretty</div>
+<p>The basic rules of the game are simple. The player starts with a score set at a fixed value -- if this score falls to 0, the game is over and they lose. Enemies spawn in <strong>waves</strong> that get progressively more difficult as the game progresses. The enemies appear from one or more source locations and try to run to goal locations. The wave does not end until every enemy of the wave has been removed from the map; either by killing them or by them reaching the goal, where they'll be removed and points deducted from the player's score for failing to stop them.</p>
+<p>There is a map with some immovable physical features that provide boundaries, there is an area of the map that is considered the &quot;goal&quot;, and there is a path from the <strong>enemy spawn</strong> to the <strong>enemy goal</strong>. The player typically might have an avatar that can run around and build <strong>towers</strong> that will fire at the enemies and cause them damage. The goal for the player is to stop as many enemies as possible.</p>
+<p>After the wave ends, there is typically a short cool-down/building period where the player receives money based on their performance, the player can build additional towers or upgrade existing ones, and then get in place for the next round.</p>
+<p>The genre remains popular today, with versions existing in Warcraft 3, Starcraft II, and even popular standalone games like <a href="http://subatomicstudios.com/games/fieldrunners/">Fieldrunners</a>.</p>
+<p><img src="/images/fieldrunners.jpg" alt="Fieldrunners" /></p>
+<div class="subtitle"><strong>Fieldrunners</strong> is a popular standalone mobile/PC Tower Defense game</div>
+<p>I doubt I'll ever reach the polish of a commercial game like Fieldrunners, but I'd like to at least make something fun to play.</p>
+<h2 id="my-initial-game-features">My Initial Game Features</h2>
+<p>The initial feature list for my proof-of-concept game is this:</p>
+<ul>
+<li>Display a <strong>game map</strong></li>
+<li>The player can place <strong>towers</strong> on the map</li>
+<li>The player has a <strong>budget</strong> that can't be exceeded and is replenished after every wave</li>
+<li>Enemies come in <strong>waves</strong> and proceed from their <strong>spawn</strong> to their <strong>goal</strong></li>
+<li>There is a <strong>victory condition</strong> for the game (a certain number of waves completed, based on the map)</li>
+<li>Towers fire at enemies</li>
+<li>The player's score starts at a certain value, based on the map</li>
+<li>When enemies reach the enemy goal zone, they deduct from the player's score</li>
+<li>There is a loss condition for the game when the player's score reaches zero</li>
+</ul>
+<h2 id="learning-rust">Learning Rust</h2>
+<p>I need to learn Rust to do this. Last night, I started my process of learning Rust by starting to read <a href="https://doc.rust-lang.org/book">the book</a>. I got to the end of chapter 6 before falling asleep. The second chapter of the book has you write a basic &quot;guess the number&quot; game to learn how a Rust program works, and then you start learning the other features of the language. By the end of chapter 6, I knew enough to start writing the basic data structs I thought I <em>might</em> need for my game, but not much else.</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">use </span><span style="color:#c0c5ce;">std::io;
+</span><span style="color:#b48ead;">use </span><span style="color:#c0c5ce;">std::cmp::Ordering;
+</span><span style="color:#b48ead;">use </span><span style="color:#c0c5ce;">rand::Rng;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">mod </span><span style="color:#c0c5ce;">geometry {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">Point(pub </span><span style="color:#b48ead;">u32</span><span style="color:#c0c5ce;">, pub </span><span style="color:#b48ead;">u32</span><span style="color:#c0c5ce;">);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">BoundingBox(pub Point, pub Point);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">BoundingBox {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">area</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; </span><span style="color:#b48ead;">u32 </span><span style="color:#c0c5ce;">{
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">((</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">).</span><span style="color:#d08770;">0 </span><span style="color:#c0c5ce;">- (</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">).</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">) * ((</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">).</span><span style="color:#d08770;">1 </span><span style="color:#c0c5ce;">- (</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">).</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">)
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">mod </span><span style="color:#c0c5ce;">game {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">use crate</span><span style="color:#c0c5ce;">::geometry;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">GameMap {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: String,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">dimensions</span><span style="color:#c0c5ce;">: geometry::BoundingBox,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub enum </span><span style="color:#c0c5ce;">GameEntityType {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Player,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Enemy,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Structure,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Zone,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Projectile,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">GameEntity {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">location</span><span style="color:#c0c5ce;">: geometry::Point,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">entity_type</span><span style="color:#c0c5ce;">: GameEntityType,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">GameEntity {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">can_take_damage</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
+</span><span style="color:#c0c5ce;">            </span><span style="color:#b48ead;">match </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.entity_type {
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">GameEntityType::Player =&gt; </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">GameEntityType::Enemy =&gt; </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">GameEntityType::Structure =&gt; </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">GameEntityType::Zone =&gt; </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">GameEntityType::Projectile =&gt; </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">enum </span><span style="color:#c0c5ce;">GameMessage {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Interact{source: GameEntity, target: GameEntity},
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">TriggerAbility{target: GameEntity},
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">Move{target: GameEntity, destination: geometry::Point},
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">GameState {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#65737e;">//    entities: 
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(Debug)]
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">ActiveGame {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">map</span><span style="color:#c0c5ce;">: GameMap,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">state</span><span style="color:#c0c5ce;">: GameState,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">pub </span><span style="color:#bf616a;">started_time</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u32</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">get_default_map</span><span style="color:#c0c5ce;">() -&gt; GameMap {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">GameMap {
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">name: String::from(&quot;</span><span style="color:#a3be8c;">Test</span><span style="color:#c0c5ce;">&quot;),
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">dimensions: geometry::BoundingBox (
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">geometry::Point(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">),
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">geometry::Point(</span><span style="color:#d08770;">100</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">100</span><span style="color:#c0c5ce;">)
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">)
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">start_game</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">map</span><span style="color:#c0c5ce;">: GameMap) -&gt; ActiveGame {
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">ActiveGame {
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">map: map,
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">state: GameState {
+</span><span style="color:#c0c5ce;">                </span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">},
+</span><span style="color:#c0c5ce;">            </span><span style="color:#c0c5ce;">started_time: </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,
+</span><span style="color:#c0c5ce;">        </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">() {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> map = game::get_default_map();
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> game = game::start_game(map);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">println!(&quot;</span><span style="color:#a3be8c;">Game started: </span><span style="color:#d08770;">{:#?}</span><span style="color:#c0c5ce;">&quot;, game);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">println!(&quot;</span><span style="color:#a3be8c;">Game bbox area: </span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot;, game.map.dimensions.</span><span style="color:#96b5b4;">area</span><span style="color:#c0c5ce;">());
+</span><span style="color:#c0c5ce;">}
+</span></pre><div class="subtitle">The very first Rust code I wrote last night</div>
+<p>I did a little research into game development in Rust, to see what other people were doing. There seem to be a handful of popular game engine libraries: <a href="https://github.com/amethyst/amethyst">Amethyst</a>, <a href="https://github.com/ggez/ggez">ggez</a>, and <a href="https://github.com/PistonDevelopers/piston">Piston</a> looked most promising to me, and there were also the excellent resources at <a href="http://arewegameyet.com/">Are we game yet?</a>.</p>
+<p>I considered using one of these pre-packaged engines, but figured that I don't really need to: my game is pretty simple, and the point is to learn anyways. But this doesn't mean I'm going to build my own engine, per se. An engine is a set of reusable components that can be used to build any game; my components might only be useful for my game. But that's fine.</p>
+<p>I read Ian Mallett's <a href="https://geometrian.com/programming/tutorials/write-games-not-engines/">excellent post</a> about writing game engines vs. games, and let this principle guide me:</p>
+<blockquote>
+<p>So my advice to you, if you’re trying to write an engine, is: don’t. No matter what your reasons are—it doesn’t matter if you’re writing an engine so you can write your dream game, or if you’re writing an engine because you think it will be a good learning experience, or any number of similar reasons—they’re all wastes of time. You can sit down and write a game without first writing an engine, and in fact this is very often the better approach, regardless of why you want to write an engine. The entire development process goes much more smoothly if you are focused on writing a game instead: a game is much easier to identify requirements for, much narrower in focus, much more rewarding when finished, and much, much more useful.</p>
+<p>The solution, even if you really want to make an engine, is to make a game instead. I can hear you crying out in protest from here, but just bear with me for a minute. The game does not have to be an epic production. It does not have to be GTA5, Quake 17, the next Elder Scrolls game, or a WoW-killer. It just has to be a game, with well defined (and ideally well thought out) gameplay and well defined developmental scope. A game is much easier to identify requirements for, as I’ve already mentioned, and it is also a practical application of those requirements. Once you have made one game, make another. Then another. Each time you start a new project, you should identify functionality that could be used and pull it out into a common library of base code. You’ll probably have to refactor some of your code to remove explicit dependencies on other code or data that is game specific, but this is a good thing. It will help you generalize what is generalizable in a way that you can still test the generalized functionality against your finished game and confirm that it still works (obviously you might have to modify some game-specific code to adapt to the increased generality, as well).</p>
+</blockquote>
+<div class="subtitle"><strong>-- Ian Mallett<strong></div>
+<h2 id="library-selection">Library Selection</h2>
+<p>I did a bit of exploration of the libraries available to me, and think I've selected at least some to evaluate for my initial pass at the game.</p>
+<p>For 3D graphics, I will try to use <a href="https://github.com/gfx-rs/gfx">gfx-rs</a>, a cross-platform, backend-agnostic graphics abstraction layer that supports OpenGL, DirectX, Vulkan, and Metal for 3D graphics.</p>
+<p>For windowing, I am looking at <a href="https://github.com/tomaka/winit">winit</a>. I saw <a href="https://suhr.github.io/gsgt/">this blog post</a> that went over using a library called <a href="https://github.com/tomaka/glutin">glutin</a>, but this looked to only support OpenGL and <strong>winit</strong> seemed to provide the same sort of functionality, but in a more agnostic manner. Regardless, the post was very helpful for providing some basic glimpse into how Rust code interfacing with <strong>gfx-rs</strong> might look.</p>
+<h2 id="zzz">Zzz...</h2>
+<p>And that brings us to the end of day 1. I have a good idea of the game I'm going to make, I have some libraries to look into, and I made some progress in learning the language.</p>
+<p>Oh, I also set up this blog this morning, so I would have somewhere to document this and other projects. I haven't blogged in so long. Since I was learning Rust, I decided to use a Rust-based static site generator called <a href="https://github.com/getzola/zola">Zola</a> and modified a template called <a href="https://github.com/rust-br/dinkleberg">Dinkleberg</a> to suit my tastes.</p>
+
+    </div>
+</article>
+
+
+        
+
+    </div>
+</body>
+</html>
