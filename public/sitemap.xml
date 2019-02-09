@@ -56,21 +56,21 @@
     
         
         <url>
-            <loc>https://czub.us/tags/</loc>
-        </url>
-        
-        <url>
-            <loc>https://czub.us/tags/about/</loc>
-        </url>
-        
-    
-        
-        <url>
             <loc>https://czub.us/categories/</loc>
         </url>
         
         <url>
             <loc>https://czub.us/categories/about/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://czub.us/tags/</loc>
+        </url>
+        
+        <url>
+            <loc>https://czub.us/tags/about/</loc>
         </url>
         
     
