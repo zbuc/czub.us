@@ -28,13 +28,6 @@
             
         </url>
     
-        <url>
-            <loc>https://czub.us/blog/rust_gamedev/002-test/</loc>
-            
-                <lastmod>2019-02-10</lastmod>
-            
-        </url>
-    
     
         <url>
             <loc>https://czub.us/</loc>
@@ -59,21 +52,21 @@
     
         
         <url>
-            <loc>https://czub.us/tags/</loc>
-        </url>
-        
-        <url>
-            <loc>https://czub.us/tags/about/</loc>
-        </url>
-        
-    
-        
-        <url>
             <loc>https://czub.us/categories/</loc>
         </url>
         
         <url>
             <loc>https://czub.us/categories/about/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://czub.us/tags/</loc>
+        </url>
+        
+        <url>
+            <loc>https://czub.us/tags/about/</loc>
         </url>
         
     
