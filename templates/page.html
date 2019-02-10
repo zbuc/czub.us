@@ -59,10 +59,10 @@
             {% if page.earlier or page.later %}
             <h3>
             {% if page.earlier %}
-            <a class="page_link prev" href="{{ page.earlier.permalink }}">&#xab; {{ page.earlier.title }}</a>
+            <a class="page_link prev" href="{{ page.earlier.permalink }}">&#xab; Previous</a>
             {% endif %}
             {% if page.later %}
-            <a class="page_link next" href="{{ page.later.permalink }}">{{ page.later.title }} &#xbb;</a>
+            <a class="page_link next" href="{{ page.later.permalink }}">Next &#xbb;</a>
             {% endif %}
             </h3>
             {% endif %}
