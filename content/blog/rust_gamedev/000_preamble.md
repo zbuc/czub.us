@@ -59,7 +59,7 @@ Now, it's been nearly a decade since I completed college, and I haven't done muc
 
 And then came Rust. It reminded me a lot of the C++ I spent a lot of time messing with as a kid, but safer and more ergonomic for developers. It looked _so cool_, but I had very little reason to learn it other than curiosity.
 
-Which, really, is as good enough a reason as any, so I decided that writing a game was the perfect opportunity to learn Rust at the same time.
+Which, really, is as good enough a reason as any, so I decided that writing a game was the perfect opportunity to learn Rust at the same time as I reconnected with the initial reason for my passion for programming.
 
 ## How This Blog Will Work
 
