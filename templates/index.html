@@ -19,7 +19,7 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <title>{% block title %}Home{% endblock title %}</title>
+    <title>{% block title %}{{ config.extra.blog_title }}{% endblock title %}</title>
 
     {% block seo %}
         <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path="apple-icon-57x57.png", trailing_slash=false) }}">
@@ -90,7 +90,8 @@
                         <img src="{{ get_url(path=config.extra.blog_logo, trailing_slash=false) }}" alt="">
                     {% endif %}
                     {% if config.extra.blog_title %}
-                        <h1 >{{config.extra.blog_title}}</h1>
+                        <div class="circle">CC</div>
+                        <!---<h1 >{{config.extra.blog_title}}</h1>-->
                     {% endif %}
                 {% endblock header_title %}
             </a>
