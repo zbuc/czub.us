@@ -19,7 +19,7 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <title>{% block title %}Home{% endblock title %}</title>
 
     {% block seo %}
         <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path="apple-icon-57x57.png", trailing_slash=false) }}">
@@ -99,10 +99,12 @@
     <div class="container padding-header">
         {% block content %}
             <main class="main">
+                {% if paginator %}
                 {% for page in paginator.pages %}
                     {{ macro::post(page=page) }}
                 {% endfor %}
                 {{ macro::post_nav(ref=paginator, extra=config.extra) }}
+                {% endif %}
             </main>
         {% endblock content %}
         {% block sidebar %}

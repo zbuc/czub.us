@@ -53,6 +53,10 @@ twitter_username="@???" # OPTIONAL, Twitter User to help with metrics
 
 ## Sidebar automatic links
 sidebar = [
+    {name = "Blog Series", urls=[
+        {name="Rust Game Dev", url="https://czub.us/blog/rust_gamedev/"},
+        {name="Woodbridge Home Renovation", url="https://czub.us/blog/woodbridge/"},
+    ]},
     {name = "Social", urls=[
         {name="Github", url="https://github.com/zbuc"},
         {name="Twitter", url="https://twitter.com/chrisczub"},
